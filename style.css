@@ -1,0 +1,31 @@
+body {
+  background-color: grey;
+  padding:0px;
+  margin:0px;
+}
+header {
+  background-color: white;
+  padding:0px;
+  height:10%;
+  border: 1px solid black;
+}
+#nav {
+  font-family: Arial, "MS Trebuchet", sans-serif;
+  position: absolute;
+  right: 10px;
+}
+th {
+  padding: 40px;
+  padding-top:35px;
+}
+.logo {
+  position:absolute;
+  font-size:30px;
+  font-weight:bold;
+  font-family: Cantarell;
+  padding-left: 20px;
+}
+.main-text {
+  
+}
+
