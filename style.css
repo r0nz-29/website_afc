@@ -25,7 +25,15 @@ th {
   font-family: Cantarell;
   padding-left: 20px;
 }
-.main-text {
-  
+.mainText {
+  font-family: Berton Roman;
+  position: relative;
+  margin-left: 10%;
+  margin-top: 15%;
+  list-style-type: none;
+}
+li:nth-child(2) {
+  color: green;
+  font-weight: bold;
 }
 
