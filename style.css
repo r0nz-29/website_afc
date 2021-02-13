@@ -29,6 +29,13 @@ header {
   color: #140c1b;
 }
 
+.tag1:active, .tag2:active, .tag3:active {
+  /*background-color: #b42c5c;*/
+  padding-bottom: 15px;
+  border-bottom: 5px solid #b42c5c;
+  color: #140c1b;
+}
+
 .tag1 {
   right: 250px;
 }
