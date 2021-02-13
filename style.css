@@ -4,6 +4,7 @@ body {
   margin:0px;
   color: #bc94fc;
   font-family: Hack;
+  background-image: url("c1.png");
 }
 header {
   background-color: #140c1b;
@@ -12,16 +13,36 @@ header {
   height:10%;
   border-bottom: 10px solid #b42c5c;
 }
-#nav {
+.tag1, .tag2, .tag3 {
   font-family: Hack;
+  font-weight: bold;
   color: #bc94fc;
   position: absolute;
-  right: 10px;
+  top: 0px;
+/*  background-color: white;*/
+  padding:20px;
+  border-radius: 2px;
 }
-th {
-  padding: 40px;
-  padding-top:35px;
+
+.tag1:hover, .tag2:hover, .tag3:hover {
+  background-color: #d67c9c;
+  color: #140c1b;
 }
+
+.tag1 {
+  right: 250px;
+}
+
+.tag2 {
+  right: 150px;
+
+}
+
+.tag3 {
+  right: 50px;
+
+}
+
 .logo {
   position:absolute;
   font-size:30px;
