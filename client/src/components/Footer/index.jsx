@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import logo from "../../images/logo-white.png";
 import { contact_details, footerLinks, icons } from "../../data";
+import { Fragment } from "react";
 
 export default function Footer() {
   const lessThan410 = useMediaQuery(`(max-width: 480px)`);
@@ -28,9 +29,9 @@ export default function Footer() {
             <img src={logo} alt="logo" width="200px" />
             <List sx={{ mt: (theme) => theme.spacing(4) }}>
               {contact_details.map((item, i) => (
-                <>
+                <Fragment key={i}>
                   <ListItem disableGutters>
-                    <Grid container spacing={2} key={i}>
+                    <Grid container spacing={2}>
                       <Grid item>{item.icon}</Grid>
                       <Grid item>
                         <Stack>
@@ -47,7 +48,7 @@ export default function Footer() {
                   {i !== 2 && (
                     <Divider sx={{ my: (theme) => theme.spacing(2) }} />
                   )}
-                </>
+                </Fragment>
               ))}
             </List>
           </Grid>

@@ -12,11 +12,13 @@ import slide3 from "../../images/3.png";
 import slide4 from "../../images/4.png";
 import slide5 from "../../images/5.png";
 import slide6 from "../../images/6.png";
+import FloatingDonateCard from "../FloatingDonateCard";
 
 export default function Mainsection() {
   const lessThan1304 = useMediaQuery(`(max-width: 1304px)`);
   const lessThan720 = useMediaQuery(`(max-width: 720px)`);
   const lessThan400 = useMediaQuery(`(max-width: 400px)`);
+  const lessThan580 = useMediaQuery(`(max-width: 580px)`);
   return (
     <Box sx={{ position: "relative" }}>
       <Carousel
@@ -67,6 +69,7 @@ export default function Mainsection() {
           Read more
         </Button>
       </Container>
+      {!lessThan580 && <FloatingDonateCard />}
     </Box>
   );
 }
