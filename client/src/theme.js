@@ -6,15 +6,13 @@ export default responsiveFontSizes(
       primary: {
         main: "#3d9c4d",
       },
+      background: {
+        alternate: "rgb(244, 243, 239)",
+        footer: "#2d3631",
+      },
+      divider: "rgba(255, 255, 255, 0.1)",
     },
     components: {
-      // MuiTypography: {
-      //   styleOverrides: {
-      //     root: {
-      //       fontFamily: "Nunito",
-      //     },
-      //   },
-      // },
       MuiButton: {
         styleOverrides: {
           text: {
@@ -25,6 +23,18 @@ export default responsiveFontSizes(
             paddingTop: "8px",
             paddingBottom: "8px",
             fontsize: "16px",
+          },
+          contained: {
+            padding: "16px",
+            paddingLeft: "40px",
+            paddingRight: "40px",
+          },
+        },
+      },
+      MuiPaper: {
+        styleOverrides: {
+          root: {
+            padding: "16px",
           },
         },
       },
