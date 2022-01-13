@@ -2,3 +2,7 @@
   padding: 0;
   margin: 0;
 }
+@font-face {
+  font-family: "asly_brush";
+  src: local("asly_brush"), url(./fonts/asly_brush.woff) format("woff");
+}

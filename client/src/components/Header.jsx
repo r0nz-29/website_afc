@@ -6,10 +6,11 @@ import {
   IconButton,
   Stack,
   Toolbar,
+  Typography,
   useMediaQuery,
 } from "@mui/material";
 import Headroom from "react-headroom";
-import logo from "../images/logo.png";
+import logo from "../images/afc.png";
 import MenuIcon from "@mui/icons-material/Menu";
 
 export default function Header() {
@@ -21,7 +22,16 @@ export default function Header() {
           <Toolbar>
             <Grid container justifyContent="space-between" alignItems="center">
               <Grid item>
-                <img src={logo} alt="company" width="120px" />
+                <Stack direction="row" columnGap={2} alignItems="center">
+                  <img src={logo} alt="art for charity" width="70px" />
+                  <Typography
+                    variant="h4"
+                    color="text.primary"
+                    fontFamily="asly_brush"
+                  >
+                    Art for Charity
+                  </Typography>
+                </Stack>
               </Grid>
               <Grid item xs={lessThan980 ? "auto" : 5}>
                 {lessThan980 ? (
