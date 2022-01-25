@@ -10,7 +10,6 @@ import {
   Typography,
   useMediaQuery,
 } from "@mui/material";
-import logo from "../../images/logo-white.png";
 import { contact_details, footerLinks, icons } from "../../data";
 import { Fragment } from "react";
 
@@ -26,7 +25,11 @@ export default function Footer() {
       <Container sx={{ pb: (theme) => theme.spacing(10) }}>
         <Grid container justifyContent="space-between">
           <Grid item>
-            <img src={logo} alt="logo" width="200px" />
+            <Stack direction="row" columnGap={2} alignItems="center">
+              <Typography color="white" fontFamily="asly_brush" fontSize="60px">
+                Art for Charity
+              </Typography>
+            </Stack>
             <List sx={{ mt: (theme) => theme.spacing(4) }}>
               {contact_details.map((item, i) => (
                 <Fragment key={i}>

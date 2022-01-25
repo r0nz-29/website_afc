@@ -13,7 +13,6 @@ export default function Testimonials() {
     <Box
       sx={{
         backgroundColor: (theme) => theme.palette.background.alternate,
-        mt: "150px",
         py: (theme) => theme.spacing(15),
       }}
     >

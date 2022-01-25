@@ -19,12 +19,16 @@ export default function TrustSection() {
         <Grid item xs={12} sm={7}>
           <Stack rowGap={4} alignItems="flex-start">
             <Typography variant="h3" fontWeight="bold">
-              We Have The Power Today To Change Tomorrow!
+              Alone we can do so little, but together so much
             </Typography>
             <Typography variant="body1" fontWeight="text.secondary">
-              Lorem ipsum dolor sit amet consectetur notted adipisicing elit sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua lonm
-              andhn cras tincidunt lobortis feugiat vivam at augue eget
+              This is a quote by Helen Keller, which forever stands the test of
+              time. When multiple people, sharing the same goal, join hands
+              together, the work becomes simpler and as an outcome, new horizons
+              are reached. Under the hood, people learn from each other, enhance
+              their creativity, personality, and social skills. We believe, if
+              an individual starts contributing, even in a modest quantity, a
+              huge impact can be made.
             </Typography>
             <Button variant="contained" color="primary">
               Discover More

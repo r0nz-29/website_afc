@@ -1,4 +1,5 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
+import shadows from "@mui/material/styles/shadows";
 
 export default responsiveFontSizes(
   createTheme({
@@ -35,6 +36,8 @@ export default responsiveFontSizes(
         styleOverrides: {
           root: {
             padding: "16px",
+            border: "1px solid #ccc",
+            boxShadow: shadows[4],
           },
         },
       },

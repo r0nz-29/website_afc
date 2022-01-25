@@ -6,13 +6,19 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import Carousel from "../Carousel";
-import slide1 from "../../images/slide1.jpg";
-import slide2 from "../../images/2.png";
-import slide3 from "../../images/3.png";
-import slide4 from "../../images/4.png";
-import slide5 from "../../images/5.png";
-import slide6 from "../../images/6.png";
 import FloatingDonateCard from "../FloatingDonateCard";
+const slide1 =
+  "https://res.cloudinary.com/daa4wqa2h/image/upload/v1642427222/vzktxei9alclag51sey3.png";
+const slide2 =
+  "https://res.cloudinary.com/daa4wqa2h/image/upload/v1642425253/wm2qqamzbfjj3qfyeiqu.jpg";
+const slide3 =
+  "https://res.cloudinary.com/daa4wqa2h/image/upload/v1641464337/osq64tfijhpto1ly6tbx.png";
+const slide4 =
+  "https://res.cloudinary.com/daa4wqa2h/image/upload/v1641464188/ia3dhvl5ov5bnm0rjyxd.png";
+const slide5 =
+  "https://res.cloudinary.com/daa4wqa2h/image/upload/v1641463706/lztma0jilc3f5wccovog.jpg";
+const slide6 =
+  "https://res.cloudinary.com/daa4wqa2h/image/upload/v1641464125/vhj4nubozvbcpmknfvb2.png";
 
 export default function Mainsection() {
   const lessThan1304 = useMediaQuery(`(max-width: 1304px)`);
