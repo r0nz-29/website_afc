@@ -52,7 +52,7 @@ function BoundingBox({ children }) {
   );
 }
 
-export default function Carousel({ height, slides }) {
+export default function Carousel({ height, slides, showArrows }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   function decrement() {
     if (currentSlide === 0) {
@@ -70,16 +70,20 @@ export default function Carousel({ height, slides }) {
   }
   return (
     <BoundingBox>
-      <NavigationBox left>
-        <ArrowButton onClick={decrement}>
-          <ArrowBackIosNewIcon />
-        </ArrowButton>
-      </NavigationBox>
-      <NavigationBox right>
-        <ArrowButton onClick={increment}>
-          <ArrowForwardIosIcon />
-        </ArrowButton>
-      </NavigationBox>
+      {showArrows && (
+        <>
+          <NavigationBox left>
+            <ArrowButton onClick={decrement}>
+              <ArrowBackIosNewIcon />
+            </ArrowButton>
+          </NavigationBox>
+          <NavigationBox right>
+            <ArrowButton onClick={increment}>
+              <ArrowForwardIosIcon />
+            </ArrowButton>
+          </NavigationBox>
+        </>
+      )}
       <img
         src={slides[currentSlide]}
         alt="slide"

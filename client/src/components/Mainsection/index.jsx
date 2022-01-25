@@ -30,6 +30,7 @@ export default function Mainsection() {
       <Carousel
         height={window.innerHeight - 96}
         slides={[slide1, slide2, slide3, slide4, slide5, slide6]}
+        showArrows={!lessThan720}
       />
       <Container
         maxWidth={lessThan1304 ? "sm" : "lg"}
@@ -41,39 +42,56 @@ export default function Mainsection() {
           textAlign: lessThan720 ? "center" : "left",
         }}
       >
-        <Typography
-          variant="h5"
-          color="white"
-          mt={(theme) => theme.spacing(lessThan400 ? 25 : 35)}
-        >
-          Welcome to kologi
-        </Typography>
-        <Typography
-          variant="h2"
-          fontWeight="bolder"
-          color="white"
-          sx={{ textTransform: "uppercase" }}
-        >
-          Saving the world
-        </Typography>
-        <Typography
-          variant="h2"
-          fontWeight="bolder"
-          color="white"
-          sx={{ textTransform: "uppercase" }}
-          mb={lessThan400 ? (theme) => theme.spacing(5) : 0}
-        >
-          Planting Trees
-        </Typography>
-        <Button
-          variant="contained"
-          color="primary"
+        <Box
           sx={{
-            mt: (theme) => theme.spacing(4),
+            mt: (theme) => theme.spacing(lessThan400 ? 25 : 35),
+            width: "fit-content",
+            p: (theme) => theme.spacing(4),
+            borderRadius: (theme) => theme.shape.borderRadius,
+            backdropFilter: "blur(20px)",
+            transform: "translateY(-25%)",
           }}
         >
-          Read more
-        </Button>
+          <Typography variant="h5" color="white">
+            Welcome to
+            <Typography
+              color="white"
+              fontSize="30px"
+              fontFamily="asly_brush"
+              component="span"
+              pl="16px"
+            >
+              Art for Charity
+            </Typography>
+          </Typography>
+          <Typography
+            variant="h2"
+            fontWeight="bolder"
+            color="white"
+            sx={{ textTransform: "uppercase" }}
+          >
+            Alone we can do so little
+          </Typography>
+          <Typography
+            variant="h2"
+            fontWeight="bolder"
+            color="white"
+            sx={{ textTransform: "uppercase" }}
+            mb={lessThan400 ? (theme) => theme.spacing(5) : 0}
+          >
+            but together so much
+          </Typography>
+          <Button
+            variant="contained"
+            color="primary"
+            sx={{
+              mt: (theme) => theme.spacing(4),
+              borderRadius: (theme) => theme.shape.borderRadius,
+            }}
+          >
+            Read more
+          </Button>
+        </Box>
       </Container>
       {!lessThan580 && <FloatingDonateCard />}
     </Box>
